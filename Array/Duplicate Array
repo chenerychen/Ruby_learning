@@ -1,0 +1,23 @@
+arr = Array.new(5, " ")
+# -> [" ", " ", " ", " ", " "]
+
+shortcut strings to array
+
+arr = %w(cat dog mouse 1 2)
+# -> ["cat", "dog", "mouse", "1", "2"]
+
+
+arr = %w(a b c)
+arr.each_with_object({}) do |value, result|
+ result[value] = value.upcase
+end
+{"a"=>"A", "b"=>"B", "c"=>"C"}
+ 
+arr = %w(a b c)
+ 
+arr.each_with_index.with_object({}) do|(value, idx), result|
+ result[value] = "#{idx}"
+end
+=> {:a=>"0", :b=>"1", :c=>"2"}
+
+
