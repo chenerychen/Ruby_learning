@@ -1,0 +1,16 @@
+
+
+x = [1,2,3]
+x.uniq!   #nil 
+
+
+x = [1,1,2,3]
+x.uniq!  #[1, 2, 3
+
+fruits = %w(orange apple banana)
+
+fruits.uniq(&:size)
+# ["orange", "apple"]
+
+objects = [1, 2, "a", "b", :c, :d]
+objects.uniq(&:class)   #[1, "a", :c]
