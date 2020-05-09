@@ -1,0 +1,4 @@
+x = "12345"
+p x.split("")
+p x.chars
+p x.each_char.to_a 
