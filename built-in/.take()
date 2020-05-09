@@ -1,0 +1,6 @@
+x = 56789
+a = x.to_s.chars.map(&:to_i).reverse
+a.take(3)
+
+
+https://apidock.com/ruby/Array/take
