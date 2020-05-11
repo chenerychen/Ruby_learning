@@ -1,0 +1,28 @@
+SUM 
+(5..10).inject(:+) # 45 
+(5..10).inject {|acc, n| acc + n} # 45
+
+
+
+Multiply 
+(5..10).inject(1, :*)  # 151200
+(5..10).inject(1) {|acc, n| acc * n}  # 151200
+
+
+
+longest word 
+longest = %w{cat sheep bear}.inject do |memo, word|
+   memo.length > word.length ? memo : word 
+end 
+longest
+
+
+converting 2-d arrays to hash 
+array = [['A', 'a'], ['B', 'b'], ['C', 'c']]
+
+hash = array.inject({}) do |memo, (key, value)|
+  memo[key] = value
+  memo
+end
+
+hash # => {'A' => 'a', 'B' => 'b', 'C' => 'c'}
