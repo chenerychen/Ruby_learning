@@ -1,0 +1,7 @@
+def no_valid_url?(urls)
+   valid_ending = ['.com', '.net', 'io', '.org']
+   
+    urls.none? do |url|
+      valid_ending.any? {|ending| url.end_with?(ending)} 
+    end 
+end 
