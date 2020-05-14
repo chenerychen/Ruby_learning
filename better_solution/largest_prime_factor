@@ -1,0 +1,8 @@
+def prime?(num)
+    return false if num < 2
+    (2...num).none? { |factor| num % factor == 0 }
+end
+
+def largest_prime_factor(num)
+    num.downto(2) { |factor| return factor if num % factor == 0 && prime?(factor) }
+end
