@@ -1,0 +1,11 @@
+(1..6).partition { |v| v.even? }  #=> [[2, 4, 6], [1, 3, 5]]
+
+
+
+def partition(arr, arg) 
+    arr.partition {|n| n > arg }
+end 
+
+  arr = [11,5,13,2,3]
+  arg = 7 
+partition(arr, arg) 
