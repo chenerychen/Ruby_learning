@@ -8,4 +8,4 @@ end
 
   arr = [11,5,13,2,3]
   arg = 7 
-partition(arr, arg) 
+partition(arr, arg) #  [[11, 13], [5, 2, 3]]
