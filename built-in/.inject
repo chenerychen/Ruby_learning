@@ -16,6 +16,10 @@ longest = %w{cat sheep bear}.inject do |memo, word|
 end 
 longest
 
+Get uniq ele in 2d array 
+[['a'], ['a', 'b'],['c']].inject(:&)  # []
+[['a'], ['a', 'b'],['a', 'c']] #['a'] 
+
 
 converting 2-d arrays to hash 
 array = [['A', 'a'], ['B', 'b'], ['C', 'c']]
